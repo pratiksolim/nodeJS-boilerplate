@@ -1,0 +1,45 @@
+{
+    "name": "nodejs-boilerplate",
+    "version": "1.0.0",
+    "description": "NodeJS Boilerplates",
+    "author": "Pratik Solim <pratik.solim@gmail.com>",
+    "main": "./index.js",
+    "scripts": {
+        "start": "export NODE_ENV=production && node ./index.js",
+        "dev": "export NODE_ENV=development && nodemon ./index.js",
+        "test": "export NODE_ENV=development && jest --coverage",
+        "docs": "jsdoc ./*"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bluebird": "^3.5.1",
+        "debug": "^3.1.0",
+        "dotenv": "^6.0.0",
+        "kcors": "^2.2.1",
+        "koa": "^2.3.0",
+        "koa-bodyparser": "^4.2.0",
+        "koa-compress": "^3.0.0",
+        "koa-morgan": "^1.0.1",
+        "koa-router": "^7.2.1",
+        "line-by-line": "^0.1.6",
+        "lodash": "^4.17.4",
+        "raven": "^2.6.3",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.2"
+    },
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb-base": "^13.0.0",
+        "eslint-plugin-import": "^2.13.0",
+        "jest": "^21.1.0",
+        "jsdoc": "^3.5.5",
+        "nodemon": "^1.17.5",
+        "supertest": "^3.0.0"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "directories": {
+        "test": "test"
+    }
+}
